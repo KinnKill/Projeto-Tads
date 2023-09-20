@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav h1{
+  background-color: #d2691e;
+  color: white;
+  border-bottom: solid 0.3em #ff8051;
+  padding: 2em;
+}
+nav ol{
+  background-color: #107385;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  color: white;
+}
+nav a{
+  color: white;
+}
+
+main{
+  background-color: white;
+  max-width: 80em;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+          "projetos professores"
+          "projetos eventos"
+}
+main section{
+  background-color: #fafafa;
+  color: black;
+  padding: 2em;
+  margin: 2em;
+}
+
+h2{
+  margin-bottom: 1em;
+}
+
+main ol{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+main li{
+  background-color: #d4dbde;
+  padding: .7em;
+}
+
+
+.projetos{ grid-area: projetos}
+.professores{ grid-area: professores}
+.eventos{ grid-area: eventos}
+
+footer{
+  height: 18em;
+}
+
+footer p{
+  display: flex;
+  align-items: center;
+  background-color: #d2691e;
+  border-top: solid 0.6em #ff8051;
+  color: white;
+  padding: 3em;
+}
